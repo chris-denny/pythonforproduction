@@ -7,3 +7,5 @@ dist
 *.egg-info
 .venv
 venv
+client_secrets.json
+week3/token.json
