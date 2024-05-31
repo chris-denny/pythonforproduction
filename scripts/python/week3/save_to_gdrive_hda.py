@@ -2,7 +2,7 @@
 
 import os
 from importlib import reload
-import hou
+import hou #type: ignore
 from week3 import gdrive_uploader
 reload(gdrive_uploader)
 
