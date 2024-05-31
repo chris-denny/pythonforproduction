@@ -25,7 +25,7 @@ def upload_file(file_path, file_name) -> None:
     # Create a GoogleAuth instance with client secrets file.
     gauth = GoogleAuth(settings_file=os.path.join(os.path.dirname(__file__), "settings.yaml"))
     gauth.LocalWebserverAuth()
-    
+
     # Create GoogleDrive instance with authenticated GoogleAuth instance.
     drive = GoogleDrive(gauth)
 
@@ -35,4 +35,4 @@ def upload_file(file_path, file_name) -> None:
     print(f"Uploading {file_path} to Google Drive...")
     file1.Upload()
     print(f"Uploaded title: {file1['title']}, id: {file1['id']}")
-
+    
