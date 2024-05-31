@@ -17,5 +17,5 @@ def upload_file(file_path, file_name):
     file1.Upload()
     print("title: " + file1["title"] + ", id: " + file1["id"])
 
-# Usage
-#upload_file(os.path.join(os.getcwd(), "hello.txt"), "hello.txt")
+# Usage Example
+# upload_file(os.path.join(os.getcwd(), "hello.txt"), "hello.txt")
