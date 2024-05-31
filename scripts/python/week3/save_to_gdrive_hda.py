@@ -1,11 +1,14 @@
 """This is the code used in the hda module to trigger the upload of the input data to Google Drive."""
+
 import os
-import hou
 from importlib import reload
-import week3.gdrive_uploader as gdrive_uploader
+import hou
+from week3 import gdrive_uploader
 reload(gdrive_uploader)
 
-def save_and_upload_file():
+
+def save_and_upload_file() -> None:
+    """Save the file to the rop_geometry node and upload it to Google Drive."""
     # Create file path and name
     file_path = hou.pwd().parm("sopoutput").evalAsString()
     file_name = os.path.basename(file_path)
