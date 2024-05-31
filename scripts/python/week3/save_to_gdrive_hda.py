@@ -8,7 +8,7 @@ reload(gdrive_uploader)
 
 
 def save_and_upload_file() -> None:
-    """Save the file to the rop_geometry node and upload it to Google Drive."""
+    """Save the file to disk with the rop_geometry node and upload it to Google Drive."""
     # Create file path and name
     file_path = hou.pwd().parm("sopoutput").evalAsString()
     file_name = os.path.basename(file_path)
