@@ -1,0 +1,4 @@
+client_config_file: "W:/Personal/24003-PythonForProduction/pythonforproduction/scripts/python/week3/client_secrets.json"
+save_credentials: True
+save_credentials_backend: file
+save_credentials_file: token.json
