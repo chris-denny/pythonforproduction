@@ -8,4 +8,5 @@ dist
 .venv
 venv
 client_secrets.json
-week3/token.json
+token.json
+*/backup
